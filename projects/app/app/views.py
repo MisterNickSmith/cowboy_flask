@@ -1,9 +1,9 @@
 from app import app
 
 @app.route('/')
-@app.route('/home') 
+#@app.route('/home') 
 
-def home(): 
+def index(): 
   return "Hello World!" 
 
 
