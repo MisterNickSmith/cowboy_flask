@@ -1,8 +1,21 @@
 
+body { 
+	background-color: black;
+        align-content: center;
+}
 
+.title { 
+color: #336600; 
+font-family: "Helvetica";  
+}
 
-.menu { 
-color: 000; 
-font: monospace;
+.menu {
+color: #336600;
+font-family: "Helvetica";
+text-decoration: none;
+word-spacing: 50px;
 
 }
+
+
+
