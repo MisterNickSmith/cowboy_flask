@@ -1,0 +1,9 @@
+.DS_Store
+out
+*.o
+*.o.dep
+.ninja_deps
+.ninja_log
+*.pyc
+*.pyo
+__pycache__/
