@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!doctype html> 
 
 
 <html>
@@ -13,14 +13,16 @@
 
 <nav class="menu">
  <span class= "menu">
- <a  class = "menu" href "{{url_for('projects') }}"> projects <a>
- <a  class = "menu" href "{{url_for('resume') }}" > resume <a>
- <a  class = "menu" href "{{url_for('contact') }}"> contact <a>
- <a  class = "menu"  href "{{url_for('notes') }}"> notes <a> 
+ <a  class = "menu" href= "{{ url_for('projects')}}"> projects <a>
+ <a  class = "menu" href= "{{ url_for('resume')}}"> resume <a>
+ <a  class = "menu" href= "{{ url_for('contact')}}"> contact <a>
+ <a  class = "menu" href= "{{ url_for('notes')}}"> notes <a> 
   </span>
 </nav> 
+<br> 
+  {% block content %} 
 
-{% block content %} {% endblock %}
+   {% endblock %}
 
 
 
