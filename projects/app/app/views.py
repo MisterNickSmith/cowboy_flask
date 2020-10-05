@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 
 #import down here to avoid confusing ciruclar imports
-from blog import db
+from blog import engine
 
 @app.route("/favicon.ico")
 def favicon():
@@ -53,7 +53,7 @@ def notes():
 def styling():
     url_for("static", filename="styling.css")
 
-db.create_all()
+
 
 if __name__ == "__main__":
     app.run(debug=true)

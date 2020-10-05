@@ -1,18 +1,18 @@
 
 body { 
-	background-color: black;
+	background-color: FBFEEE;
         align-content: center;
 }
 
 .title { 
-color: #336600; 
+color: #000000; 
 font-family: "Helvetica";  
 padding: 5px;
 margin: 7px;
 }
 
 .menu {
-color: #336600;
+color: #000000;
 font-family: "Helvetica";
 text-decoration: none;
 word-spacing: 50px;
@@ -20,18 +20,18 @@ word-spacing: 50px;
 }
 
 .noter {
-color: #336600; 
+color: #000000; 
 font-family:"Helvetica";
 }
 
 .contact {
-color: #336600; 
+color: #000000; 
 font-family: "Helvetica";  
 align-content: center;
 }
 
 .backhome {
-color: #336600;
+color: #000000;
 font-family: "Helvetica";
 text-decoration: none;
 padding: 35px;
