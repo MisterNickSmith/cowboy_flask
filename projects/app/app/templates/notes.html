@@ -2,18 +2,19 @@
 {% extends "base.html" %} 
 
 {% block content %} 
+<button class="post_option" onclick="post()"> New Post </button>  
 
-<a class="post_option"> New Post </a>  
-
+<div class="sub"> 
 
 <form class="notes"> 
 
- <textarea id="post_box" name="post_data"  rows="4" cols="15">
+ <textarea id="post_box" name="post_data"  rows="40" cols="50">
 
 </textarea>
-
-
-<input type="submit" class="submission_button">Submit</input> 
+<div>
+<input type="submit" class="submission_button"></input> 
+</div>
+</div>
 
 </form> 
 

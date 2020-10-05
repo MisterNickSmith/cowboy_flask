@@ -35,9 +35,9 @@ def projects():
     return render_template("projects.html", title="Projects")
 
 
-@app.route("/resume.html")
-def resume():
-    return render_template("resume.html", title="Resume")
+@app.route("/about.html")
+def about():
+    return render_template("about.html", title="about")
 
 
 @app.route("/contact.html")
