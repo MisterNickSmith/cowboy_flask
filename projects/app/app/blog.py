@@ -9,7 +9,7 @@ from views import app
 db = SQLAlchemy(app)
 
 class Note(db.Model):
-   date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow) 
+   date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, primary_key=True) 
    post= db.Column(db.Text, nullable=False) 
 
    def __repr__(self): 
