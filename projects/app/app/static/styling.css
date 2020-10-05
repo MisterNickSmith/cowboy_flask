@@ -7,6 +7,8 @@ body {
 .title { 
 color: #336600; 
 font-family: "Helvetica";  
+padding: 5px;
+margin: 7px;
 }
 
 .menu {
@@ -17,5 +19,21 @@ word-spacing: 50px;
 
 }
 
+.noter {
+color: #336600; 
+font-family:"Helvetica";
+}
 
+.contact {
+color: #336600; 
+font-family: "Helvetica";  
+align-content: center;
+}
 
+.backhome {
+color: #336600;
+font-family: "Helvetica";
+text-decoration: none;
+padding: 35px;
+
+}

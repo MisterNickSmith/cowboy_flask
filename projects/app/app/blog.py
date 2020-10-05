@@ -1,12 +1,19 @@
 from flask import Flask 
 import os 
-from Flask-Squlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 from flask_blogging import SQLAStorage, BloggingEngine
-from app import config 
+import config 
+from datetime import datetime
+from views import app
 
-db = SQlAlchemy(app) 
-storage = SQLAStorage(db=db) 
-db.create_all()
+db = SQLAlchemy(app)
 
+class Note(db.Model):
+   date = db.Column(db.DateTime, nullable=False, default=datetime.utcnow) 
+   post= db.Column(db.Text, nullable=False) 
+
+   def __repr__(self): 
+    return f"Note('{self.date}')"
+   
 
 

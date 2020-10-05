@@ -1,21 +1,31 @@
 from flask import Flask
 from flask import render_template, send_from_directory
 import os
-from flask_blogging import SQLAStorage , BloggingEngine
+from flask_blogging import SQLAStorage, BloggingEngine
+
+
 
 app = Flask(__name__)
 # why imported from app and not flask?
 
-app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 
-@app.route('/favicon.ico')
+#import down here to avoid confusing ciruclar imports
+from blog import db
+
+@app.route("/favicon.ico")
 def favicon():
-    return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+    return send_from_directory(
+        os.path.join(app.root_path, "static"),
+        "favicon.ico",
+        mimetype="image/vnd.microsoft.icon",
+    )
+
+
 
 
 @app.route("/")
-@app.route("/home")
+@app.route("/base.html")
 def home():
     return render_template("base.html", title="Nick Smith")
 
@@ -43,6 +53,7 @@ def notes():
 def styling():
     url_for("static", filename="styling.css")
 
+db.create_all()
 
 if __name__ == "__main__":
     app.run(debug=true)
