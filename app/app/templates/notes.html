@@ -1,0 +1,33 @@
+
+{% extends "base.html" %} 
+
+{% block content %} 
+
+<script> 
+ function post() {
+ var p = document.createElement("TEXTAREA"); 
+ p.setAttribute("id", "post_box" );
+ p.setAttribute("rows", "40" );
+ p.setAttribute("cols", "50" );
+ document.div.appendChild(p); 
+  }
+</script> 
+
+<button class="post_option" onclick="post()"> New Post </button>  
+
+<form class="notes"> 
+<div class="sub"> 
+
+
+
+
+<div>
+<input type="submit" class="submission_button"></input> 
+</div>
+</div>
+
+</form> 
+
+{% endblock %}
+
+

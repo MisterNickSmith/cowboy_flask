@@ -1,0 +1,86 @@
+
+body { 
+	background-color: FBFEEE;
+        
+
+}
+
+.wrapper {
+   display: grid; 
+   grid-template-columns:
+    1fr
+    min(65ch, 100%)
+    1fr;
+}
+
+.wrapper > * {
+ grid-column: 2;
+}
+
+.full-bleed {
+ width:100%;
+ grid-column: 1 / 4;
+}
+
+
+.title { 
+color: #000000; 
+font-family: "roboto";  
+padding: 5px;
+margin: 7px;
+}
+
+.menu {
+color: #000000;
+font-family: "roboto";
+text-decoration: none;
+word-spacing: 50px;
+
+}
+
+.noter {
+color: #000000; 
+font-family:"roboto";
+}
+
+.contact {
+color: #000000; 
+font-family: "roboto";  
+align-content: center;
+}
+
+.backhome {
+color: #000000;
+font-family: "roboto";
+text-decoration: none;
+padding: 35px;
+
+}
+
+.notes {
+margin: auto;
+color: #000000;
+font-family: "roboto";
+align-content: center;
+}
+
+div.sub {
+margin: auto;
+width: 50%;
+}
+
+.submission_button { 
+
+}
+.about {
+margin: auto;
+color: #000000;
+font-family: "roboto";
+align-content: center;
+}
+
+.profile_pic {
+align content: left; 
+max-width: 50%; 
+max-height: 50%;
+}

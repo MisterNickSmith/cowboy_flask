@@ -1,0 +1,35 @@
+<!doctype html> 
+
+
+<html>
+ <head> 
+<meta charset= "utf-8"> 
+<title> {{title}}  </title> 
+
+<link rel="stylesheet" href="static/styling.css">
+</head> 
+ <body>
+
+<main class="wrapper" >
+ <h1 class= "title"> {{title}} </h1>
+<nav class="menu">
+ <span class= "menu">
+  {% if  (title != "Nick Smith") %}
+     <a class="backhome" href="base.html"> Home </a>
+  {% endif %}  
+ <a  class = "menu" href= "{{ url_for('projects')}}"> projects <a>
+ <a  class = "menu" href= "{{ url_for('about')}}"> about <a>
+ <a  class = "menu" href= "{{ url_for('notes')}}"> notes <a> 
+  </span>
+</nav> 
+
+ 
+<br> 
+  {% block content %} 
+
+   {% endblock %}
+
+</main>
+
+ </body>
+</html> 
